@@ -19,3 +19,11 @@ You can set language and timezone for your dashboard. Default language is `en` a
 #### Currency
 
 Same as number but can override currency `symbol`
+
+> Note that formatting configs can be overwritten by charts, then by token config
+
+```mermaid
+graph LR;
+    A(Token)-->B(Chart);
+    B-->C(Dashboard);
+```

@@ -1,4 +1,4 @@
-## Filters
+# Filters
 
 You can specify filters in dashboard that determines what you can use in queries. Sumboard provides some hardcoded labels that have predefined values.
 
@@ -32,3 +32,11 @@ Default values of the filter, if number of values will be greater than 1, dashbo
 
 #### Name (optional)
 Filter name that is shown instead of raw filter label
+
+> Note that filters can be overwritten by following hierarchy
+
+```mermaid
+graph LR;
+    A("Token (In case of schedule will be used filters from token on creation)")-->B(Query filters);
+    B-->C(Dashboard)
+```
