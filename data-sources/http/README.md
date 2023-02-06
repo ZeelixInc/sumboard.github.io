@@ -14,3 +14,10 @@ Url for generating token should be through a POST request with body:
     "refreshToken": "string"
 }
 ```
+
+And response body:
+```json
+{
+    "token": "string"
+}
+```

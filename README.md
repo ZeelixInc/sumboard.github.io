@@ -6,8 +6,8 @@ Sumboard is a web analytics platform that enables users to create and customize 
 
 ```mermaid
 erDiagram
-    Company ||--o{ Dashboard : contains
-    Company ||--o{ Connections : contains
+    Organization ||--o{ Dashboard : contains
+    Organization ||--o{ Connections : contains
     Dashboard ||--|{ Charts : contains
     Dashboard ||--|{ Links : contains
     Links ||--|{ Schedules : contains
