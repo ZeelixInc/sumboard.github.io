@@ -22,3 +22,5 @@
 * [Reports](/reports/)
 * [Schedules](/schedules/)
 * [Settings](/settings/)
+    * [Templates](/settings/templates/)
+    * [Configure Email Sender Address](/settings/email-sender/)

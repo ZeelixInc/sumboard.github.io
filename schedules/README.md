@@ -16,7 +16,7 @@ In order to see and configure schedules you need to click on 3 dots in top-right
 
 * `Send to` - list of emails addresses that will receive this report, minimum address
 * `Subject` - email subject
-* `Message` - email message
+* `Message` - email message (can use variables: specific filter value, dashboard name, filters count)
 * `Format` - types of reports that will be attached to emails, available values are: `excel`, `pdf`, `image`, minimum 1 attachment
 * `Type` - is a radio button, you can chose `Time based` (aka auto) or `Custom trigger`
 
