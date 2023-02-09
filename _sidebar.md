@@ -3,7 +3,7 @@
 * [Data Sources](/data-sources/)
     * [SQL](/data-sources/sql/)
     * [Http](/data-sources/http/)
-    * [MongoDb](/data-sources/mongo-db/)
+    * [MongoDb](/data-sources/mongodb/)
 * [Dashboards](/dashboards/)
     * [Links](/dashboards/links/)
     * [Configuration](/dashboards/configuration/)
