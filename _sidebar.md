@@ -18,6 +18,7 @@
     * [Table Chart](/charts/table/)
     * [Transpose Table Chart](/charts/table-transpose/)
     * [Pivot Table Chart](/charts/table-pivot/)
+    * [Configuration](/charts/configuration/)
 * [Editor](/editor/)
 * [Reports](/reports/)
 * [Schedules](/schedules/)
