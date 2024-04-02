@@ -1,15 +1,22 @@
-# Introduction
+## dep
 
-Sumboard is a web analytics platform that enables users to create and customize dashboards from their data sources such as sql and http APIs.
+```bash
+npm run i
 
-> Simplified app structure
+```
 
-```mermaid
-erDiagram
-    Organization ||--o{ Dashboard : contains
-    Organization ||--o{ Connections : contains
-    Dashboard ||--|{ Charts : contains
-    Dashboard ||--|{ Links : contains
-    Links ||--|{ Schedules : contains
-    Charts ||--o{ Connections : linked
+## serve
+
+```bash
+npm run docs:dev
+
+```
+
+## build
+
+```bash
+npm run docs:build
+
+# dist location
+# /.vitepress/dist/
 ```

@@ -91,11 +91,12 @@ https://example-api/v1/analytics/{:tokenFilter}/sales?{aggregation:aggregation}&
 ```
 
 Mongo query is an object with following properties:
-* `collection` - collection to query
-* `projection` - values to query that will be used in aggregations
-* `filters` - mongodb aggregation documents
-* `sort` - sorting by columns, it can have 0 values
-* `extract` - final fields that will be used in dashboards
+
+- `collection` - collection to query
+- `projection` - values to query that will be used in aggregations
+- `filters` - mongodb aggregation documents
+- `sort` - sorting by columns, it can have 0 values
+- `extract` - final fields that will be used in dashboards
 
 > Note that you can't set placeholders for filters that doesn't exists in dashboards
 
@@ -141,4 +142,4 @@ Mongo query is an object with following properties:
 - [Image](/charts/image/)
 - [Table](/charts/table/)
 - [Transpose Table](/charts/table-transpose/)
-- [Pivot Table](/charts/table-piot/)
+- [Pivot Table](/charts/table-pivot/)
