@@ -10,27 +10,32 @@ const config = defineConfig({
     root: {
       label: "English",
       lang: "en",
-    },
-    fr: {
-      label: "French",
-      lang: "fr", // optional, will be added  as `lang` attribute on `html` tag
-      link: "/fr/", // default /fr/ -- shows on navbar translations menu, can be external
-
-      // other locale specific properties...
-    },
+    }
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Charts", link: "/charts/" },
-      { text: "Dashboards", link: "/dashboards/" },
+      { text: "Changelog", link: "/*/" },
+      { text: "Go to Sumboard ->", link: "https://www.sumboard.io/" },
     ],
 
     sidebar: [
       {
+        text: "Getting started",
+        items: [
+          { text: "What is Sumboard", link: "*" },
+          { text: "Connect your data", link: "*" },
+          { text: "Create a dashboard", link: "*" },
+          { text: "Share or embed", link: "*" },
+        ],
+      },
+      {
         text: "Data Sources",
         items: [
-          { text: "Overview", link: "/data-sources/" },
+          { text: "Introduction", link: "/data-sources/" },
+          { text: "Allow connections from Sumboard IP addresses", link: "*" },
+          { text: "Supported data sources", link: "*" },
+          { text: "API connection", link: "*" },
           { text: "SQL", link: "/data-sources/sql/" },
           { text: "Http", link: "/data-sources/http/" },
           { text: "MongoDb", link: "/data-sources/mongodb/" },
@@ -39,10 +44,53 @@ const config = defineConfig({
       {
         text: "Dashboards",
         items: [
-          { text: "Overview", link: "/dashboards/" },
-          { text: "Links", link: "/dashboards/links/" },
-          { text: "Configuration", link: "/dashboards/configuration/" },
+          { text: "Introduction", link: "/dashboards/" },
+          { text: "Create a dashboard", link: "*" },
+          { text: "Charts", link: "*" },
+          { text: "Chart configuration", link: "*" },
+          { text: "Query editor", link: "*" },
           { text: "Filters", link: "/dashboards/filters/" },
+          { text: "Dashboard localization", link: "*" },
+          { text: "Dashboard settings", link: "/dashboards/configuration/" },
+          { text: "Sharing", link: "/dashboards/links/" },
+        ],
+      },
+      {
+        text: "Layouts",
+        items: [
+          { text: "Introduction", link: "/dashboards/" },
+          { text: "Desktop layout", link: "*" },
+          { text: "PDF layout (soon)", link: "*" },
+          { text: "Mobile layout (soon)", link: "*" },
+        ],
+      },
+      {
+        text: "Customer-facing features",
+        items: [
+          { text: "Introduction", link: "/dashboards/" },
+          { text: "Interactivity", link: "*" },
+          { text: "Filtering", link: "*" },
+          { text: "Scheduling", link: "*" },
+          { text: "Exporting", link: "*" },
+        ],
+      },
+      {
+        text: "Filtering",
+        items: [
+          { text: "Introduction", link: "/dashboards/" },
+          { text: "Default filters", link: "*" },
+          { text: "Custom filters", link: "*" },
+          { text: "External filter", link: "*" },
+        ],
+      },
+      {
+        text: "Embedding",
+        items: [
+          { text: "Installation", link: "*" },
+          { text: "Back-end setup", link: "*" },
+          { text: "Dashboard embedding types", link: "*" },
+          { text: "Dashboard localization", link: "*" },
+          { text: "Multi-tenant custom filters", link: "*" },
         ],
       },
       {
@@ -59,6 +107,35 @@ const config = defineConfig({
           { text: "Transpose Table Chart", link: "/charts/table-transpose/" },
           { text: "Pivot Table Chart", link: "/charts/table-pivot/" },
           { text: "Configuration", link: "/charts/configuration/" },
+        ],
+      },
+      {
+        text: "Versioning (soon)",
+        items: [
+        ],
+      },
+      {
+        text: "Administration",
+        items: [
+          { text: "Organization settings", link: "*" },
+          { text: "Users", link: "*" },
+          { text: "Dashboard themes", link: "*" },
+          { text: "Notifications", link: "*" },
+          { text: "Export settings", link: "*" },
+          { text: "User settings", link: "*" },
+        ],
+      },
+      {
+        text: "Trust & Security",
+        items: [
+          { text: "Data privacy and security FAQ", link: "*" },
+          { text: "Privacy Policy", link: "*" },
+        ],
+      },
+      {
+        text: "Legal",
+        items: [
+          { text: "Terms and conditions", link: "*" },
         ],
       },
       {
