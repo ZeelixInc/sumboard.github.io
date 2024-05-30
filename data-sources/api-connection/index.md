@@ -1,4 +1,4 @@
-# Http
+# API data source connection
 
 Http connections retrieves data from your HTTP API. It will constantly generate a temporary token once the previous one has expired. You need to specify following options:
 
