@@ -23,10 +23,10 @@ const config = defineConfig({
       {
         text: "Getting started",
         items: [
-          { text: "What is Sumboard", link: "*" },
-          { text: "Connect your data", link: "*" },
-          { text: "Create a dashboard", link: "*" },
-          { text: "Share or embed", link: "*" },
+          { text: "What is Sumboard", link: "/getting-started/what-is-sumboard/" },
+          { text: "Connect your data", link: "/getting-started/connect-your-data/" },
+          { text: "Create a dashboard", link: "/getting-started/create-dashboard/" },
+          { text: "Share or embed", link: "/getting-started/share-embed/" },
         ],
       },
       {
