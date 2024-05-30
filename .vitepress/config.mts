@@ -3,8 +3,8 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
 const config = defineConfig({
-  title: "Docs",
-  description: "Documentation",
+  title: "Sumboard docs",
+  description: "Sumboard is a low-code tool for embedding interactive analytics into B2B SaaS products.",
   base: "/",
   locales: {
     root: {
@@ -23,7 +23,7 @@ const config = defineConfig({
       {
         text: "Getting started",
         items: [
-          { text: "What is Sumboard", link: "/getting-started/what-is-sumboard/" },
+          { text: "What is Sumboard", link: "/" },
           { text: "Connect your data", link: "/getting-started/connect-your-data/" },
           { text: "Create a dashboard", link: "/getting-started/create-dashboard/" },
           { text: "Share or embed", link: "/getting-started/share-embed/" },
@@ -172,4 +172,5 @@ export default withMermaid({
   mermaid: {
     startOnLoad: true,
   },
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]]
 });
