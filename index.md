@@ -32,7 +32,7 @@ Sumboard is the quickest way to build customer-facing analytics. Growing SaaS co
 
 ![Sumboard dashboard editor](sumboard-dashboard-intro.jpg)
 
-Sumboard stands out by offering a simple and straightforward approach to embedding customer-facing analytics. Unlike other solutions that can be complex and time-consuming, Sumboard allows you to:
+Sumboard stands out by offering a simple and straightforward approach to embedding customer-facing analytics. Unlike other solutions that can be complex, expensive and time-consuming, Sumboard allows you to:
 * **Connect data sources**: Seamlessly integrate with various SQL or API data sources.
 * **Query data**: Use an intuitive query editor to retrieve the necessary data.
 * **Build visualizations**: Create interactive dashboards and visualizations with an easy drag-and-drop interface.
