@@ -1,6 +1,8 @@
 # Connect your data
 Connect data from your warehouse, SQL/No-SQL databases, or API.
 
+![Connect data source](connect-data-1.jpg)
+
 :::tip
 Start exploring Sumboard immediately with our demo data connection, **[Demo] Sumboard public data**, pre-installed on all new workspaces. You can find it in Data Sources.
 :::
