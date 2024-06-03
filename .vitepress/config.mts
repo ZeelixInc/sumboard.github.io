@@ -31,14 +31,12 @@ const config = defineConfig({
         ],
       },
       {
-        text: "Data Sources",
+        text: "Data connections",
         items: [
           { text: "Introduction", link: "/data-sources/" },
-          { text: "Allow connections from Sumboard IP addresses", link: "*" },
-          { text: "Supported data sources", link: "*" },
-          { text: "API connection", link: "/data-sources/api-connection/" },
-          { text: "SQL", link: "/data-sources/sql/" },
-          { text: "MongoDb", link: "/data-sources/mongodb/" },
+          { text: "Database security", link: "/data-sources/database-security/" },
+          { text: "Allow connections from Sumboard IP addresses", link: "/data-sources/allow-sumboard/" },
+          { text: "API data source connection", link: "/data-sources/api-connection/" },
         ],
       },
       {
@@ -131,7 +129,7 @@ const config = defineConfig({
         text: "Trust & Security",
         items: [
           { text: "Data privacy and security FAQ", link: "*" },
-          { text: "Privacy Policy", link: "*" },
+          { text: "Privacy Policy", link: "/trust-security/privacy-policy/" },
         ],
       },
       {
