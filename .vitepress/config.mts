@@ -86,10 +86,12 @@ const config = defineConfig({
       {
         text: "Embedding",
         items: [
-          { text: "Installation", link: "*" },
-          { text: "Back-end setup", link: "*" },
-          { text: "Dashboard embedding types", link: "*" },
-          { text: "Dashboard localization", link: "*" },
+          { text: "Installation", link: "/embedding/" },
+          { text: "Back-end setup", link: "/embedding/backend/" },
+          { text: "Simple embed", link: "/embedding/simple/" },
+          { text: "Embed with static token parameter", link: "/embedding/static-token/" },
+          { text: "Embed with your app filters", link: "/embedding/app-filters/" },
+          { text: "Dashboard localization", link: "/embedding/localization/" },
           { text: "Multi-tenant custom filters", link: "*" },
         ],
       },
