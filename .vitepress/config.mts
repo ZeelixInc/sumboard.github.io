@@ -40,17 +40,15 @@ const config = defineConfig({
         ],
       },
       {
-        text: "Dashboards",
+        text: "Dashboard editor",
         items: [
-          { text: "Introduction", link: "/dashboards/" },
-          { text: "Create a dashboard", link: "*" },
-          { text: "Charts", link: "*" },
+          { text: "Introduction", link: "/dashboard-editor/" },
+          { text: "Query editor", link: "/dashboard-editor/query-editor/" },
           { text: "Chart configuration", link: "*" },
-          { text: "Query editor", link: "*" },
-          { text: "Filters", link: "/dashboards/filters/" },
+          { text: "Filters", link: "/dashboard-editor/filters/" },
           { text: "Dashboard localization", link: "*" },
-          { text: "Dashboard settings", link: "/dashboards/configuration/" },
-          { text: "Sharing", link: "/dashboards/links/" },
+          { text: "Dashboard settings", link: "/dashboard-editor/configuration/" },
+          { text: "Sharing", link: "/dashboard-editor/links/" },
         ],
       },
       {
@@ -137,10 +135,6 @@ const config = defineConfig({
         items: [
           { text: "Terms and conditions", link: "*" },
         ],
-      },
-      {
-        text: "Editor",
-        items: [{ text: "Overview", link: "/editor/" }],
       },
       {
         text: "Reports",
