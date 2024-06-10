@@ -35,5 +35,7 @@ All Sumboard charts are interactive both in the Editor and in the viewer mode.
 ## Chart colors
 Sumboard charts support different color themes. You can add a color theme in the **Customization** tab from the **Workspace settings**. Then you can apply a **theme** from the **Dashboard settings**
 
+![Select a custom theme](theme.jpg)
+
 ## Chart timezones
-If one or both of your chart axes uses a timestamp column, Sumboard will convert timestamps to a target timezone.The target timezone is set by the workspace timezone, and can be overriden on the Dashboard level. 
+If one or both of your chart axes uses a timestamp column, Sumboard will convert timestamps to a target timezone.The target timezone is set by the workspace timezone, and can be overriden on the Dashboard level from **Dashboard settings**. 

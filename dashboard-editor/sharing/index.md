@@ -1,11 +1,16 @@
-# Links
+# Sharing and embedding
+A dashboard can be shared via a link or embedded in an external app. 
 
-Links are entrypoints to your dashboard that can be public or token. A dashboard can have multiple links.
+## Sharing
+To share your dashboard with others, you need to create a shared link by clicking the **Share** button. You can generate multiple links, each with specific settings. For each link, you can enable features such as email scheduling and filtering. This option generates a link to your published dashboard with all filters set to their default values. Any changes you may have made to any shared dashboard will be reflected in the shared dashboard link.
 
-#### Token links
-Requires token generated with company secret in order to access it.
+![Share modal](share.jpg)
 
-#### Public links
-Access token can be generated on page without any intervention.
+## Embedding
+Embed dashboards into any website that supports iframes. To embed a dashboard, click the **Share** button, then navigate to the **Embed** tab. Here, you'll find a shared token for your integration. Use this token to embed the dashboard into your website. With this token, the dashboard will display personalized data to each user, ensuring a tailored experience.
 
-> Tokens can contain filters and general formatting setting that will have the most priority. You can read more about
+![Embedding](embed.jpg)
+
+Additionally, you can choose whether to allow your customers to schedule email notifications, use filters, or set up custom triggers for embedding.
+
+You can find more information about embedding [here](/embedding/).
