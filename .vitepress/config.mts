@@ -44,11 +44,12 @@ const config = defineConfig({
         items: [
           { text: "Introduction", link: "/dashboard-editor/" },
           { text: "Query editor", link: "/dashboard-editor/query-editor/" },
-          { text: "Chart configuration", link: "*" },
+          { text: "Chart configuration", link: "/dashboard-editor/chart-configs/" },
+          { text: "Table configs", link: "/dashboard-editor/table/" },
           { text: "Filters", link: "/dashboard-editor/filters/" },
           { text: "Dashboard localization", link: "*" },
           { text: "Dashboard settings", link: "/dashboard-editor/configuration/" },
-          { text: "Sharing", link: "/dashboard-editor/links/" },
+          { text: "Sharing", link: "/dashboard-editor/sharing/" },
         ],
       },
       {
