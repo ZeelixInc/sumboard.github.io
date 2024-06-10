@@ -55,10 +55,10 @@ const config = defineConfig({
       {
         text: "Layouts",
         items: [
-          { text: "Introduction", link: "/dashboards/" },
-          { text: "Desktop layout", link: "*" },
-          { text: "PDF layout (soon)", link: "*" },
-          { text: "Mobile layout (soon)", link: "*" },
+          { text: "Introduction", link: "/layouts/" },
+          { text: "Desktop layout", link: "/layouts/desktop/" },
+          { text: "PDF layout", link: "/layouts/pdf/" },
+          { text: "Mobile layout", link: "/layouts/mobile/" },
         ],
       },
       {

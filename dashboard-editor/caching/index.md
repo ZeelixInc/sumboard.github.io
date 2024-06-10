@@ -7,3 +7,7 @@ Caching in Sumboard enhances performance by temporarily storing frequently acces
 * For subsequent accesses, Sumboard retrieves the data from the cache instead of fetching it again from the data source.
 * Cached data has an expiration time, after which it will be considered stale. Once the cache expires, Sumboard will fetch the data again from the data source and update the cache.
 * You can configure caching settings to control how long data should be stored in the cache before it expires. Just adjust the cache timeout.
+
+:::info
+We don't store any data besides the cached information. Once the cache timeout expires, we remove this data as well.
+:::
