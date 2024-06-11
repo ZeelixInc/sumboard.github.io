@@ -1,8 +1,4 @@
 # Introduction
-
-* [Templates](/settings/templates/)
-* [Configure Email Sender Address](/settings/email-sender/)
-
 Dashboard settings
 Dashboard can configure visual components and localization aspects. Dashboard is a grid of columns and rows, you can specify minCols, in this case the whole screen will contain selected amount of columns. You also can configure maxCols, when a chart will expand more than min, columns will shrink to add require amount od columns, a chart can't expand more than max. It a chart expands more than minRows, row's height will remain constant and an additional one will be pushed down.
 
