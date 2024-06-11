@@ -73,10 +73,10 @@ const config = defineConfig({
       {
         text: "Filtering",
         items: [
-          { text: "Introduction", link: "/dashboards/" },
-          { text: "Default filters", link: "*" },
-          { text: "Custom filters", link: "*" },
-          { text: "External filter", link: "*" },
+          { text: "Introduction", link: "/filters/" },
+          { text: "Default filters", link: "/filters/default/" },
+          { text: "Custom filters", link: "/filters/custom/" },
+          { text: "External filters", link: "/filters/external/" },
         ],
       },
       {
@@ -126,13 +126,13 @@ const config = defineConfig({
         text: "Trust & Security",
         items: [
           { text: "Data privacy and security FAQ", link: "*" },
-          { text: "Privacy Policy", link: "/trust-security/privacy-policy/" },
+          { text: "Privacy Policy", link: "https://www.sumboard.io/privacy-policy/" },
         ],
       },
       {
         text: "Legal",
         items: [
-          { text: "Terms and conditions", link: "*" },
+          { text: "Terms and conditions", link: "https://www.sumboard.io/terms-of-use/" },
         ],
       },
     ],
