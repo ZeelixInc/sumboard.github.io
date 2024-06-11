@@ -136,17 +136,6 @@ const config = defineConfig({
           { text: "Terms and conditions", link: "*" },
         ],
       },
-      {
-        text: "Settings",
-        items: [
-          { text: "Overview", link: "/settings/" },
-          { text: "Templates", link: "/settings/templates/" },
-          {
-            text: "Configure Email Sender Address",
-            link: "/settings/email-sender/",
-          },
-        ],
-      },
     ],
 
     socialLinks: [],
