@@ -107,8 +107,9 @@ const config = defineConfig({
         ],
       },
       {
-        text: "Versioning (soon)",
+        text: "Versioning",
         items: [
+          { text: "Introduction", link: "/versioning/" },
         ],
       },
       {
@@ -125,7 +126,7 @@ const config = defineConfig({
       {
         text: "Trust & Security",
         items: [
-          { text: "Data privacy and security FAQ", link: "*" },
+          { text: "Data privacy and security FAQ", link: "/trust-security/" },
           { text: "Privacy Policy", link: "https://www.sumboard.io/privacy-policy/" },
         ],
       },
