@@ -16,7 +16,7 @@ const config = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Changelog", link: "/*/" },
-      { text: "Go to Sumboard ->", link: "https://www.sumboard.io/" },
+      { text: "Go to Sumboard", link: "https://www.sumboard.io/" },
     ],
 
     sidebar: [
@@ -88,7 +88,6 @@ const config = defineConfig({
           { text: "Embed with static token parameter", link: "/embedding/static-token/" },
           { text: "Embed with your app filters", link: "/embedding/app-filters/" },
           { text: "Dashboard localization", link: "/embedding/localization/" },
-          { text: "Multi-tenant custom filters", link: "*" },
         ],
       },
       {
