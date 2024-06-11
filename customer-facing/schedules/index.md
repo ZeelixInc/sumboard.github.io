@@ -1,35 +1,38 @@
 # Schedules
+You and your customers can schedule email notifications to be sent at hourly, daily, weekly, or monthly intervals.
 
-Schedules are automated tasks that send emails to configured addresses at a certain period or when triggered by someone.
+:::info
+To use this feature, ensure that `Allow schedules` is turned on for the embedding or shared link you are using.
+:::
 
-> Note: You need to have `use schedules`, and, additionally, `use custom triggers` turned on for dashboard and link that you are using in order to use this feature.
+When creating a schedule, the dashboard export (as Excel, PDF, or Image) will be sent to the specified emails, along with a custom message and subject, at the selected day and hour. Multiple schedules can be created for a given dashboard, each with its own unique settings.
 
-#### Opening schedules view
+## Creating a schedule
+To view and configure schedules, click the three dots in the top-right corner of the dashboard and select the Schedules option. A popup will appear displaying the currently active schedules. You can also delete schedules from this list.
 
-In order to see and configure schedules you need to click on 3 dots in top-right corner of dashboard and click on `Schedules` option. You will see a popup with currently active list of schedules. Here you can also delete them.
+![Creating a scheduled list](schedules-list.jpg)
 
-![alt text](schedules-list.png)
+:::info
+Each user with a different token will have unique schedules.
+:::
 
-> Note: For every user with different token filters will be different schedules.
+To create a schedule, you need to specify the following options:
+- **Send to**: A list of email addresses that will receive the report (minimum one address).
+- **Subject**: The subject of the email.
+- **Message**: The body of the email. You can include variables such as specific filter values, dashboard name, and filter count.
+- **Format**: The types of reports to attach to the email. Available formats are **Excel**, **PDF**, and **Image** (minimum one attachment required).
+- **Type**: A radio button to choose between Time-based (automatic) or Custom trigger scheduling.
 
-#### Creating/updating
+If the type is **Custom Trigger**, a trigger URL will be generated that can be activated through a POST request with an organization token. If the type is **Time-based**, additional configuration is required.
 
-- `Send to` - list of emails addresses that will receive this report, minimum address
-- `Subject` - email subject
-- `Message` - email message (can use variables: specific filter value, dashboard name, filters count)
-- `Format` - types of reports that will be attached to emails, available values are: `excel`, `pdf`, `image`, minimum 1 attachment
-- `Type` - is a radio button, you can chose `Time based` (aka auto) or `Custom trigger`
+You can choose from four time-based orientations:
+- **Day**: Configure the interval between days when the email will be sent.
+- **Week**: Configure the interval between weeks and the specific day of the week. 
+- **Month**: Set the interval between months and specify either specific month days or relative days (e.g., last day of the month).
+- **Year**: Set the interval between years, specify the months, and the days within those months, or use relative dates.
 
-If type is `Custom Trigger`, it will generate a trigger url that can be queried through a POST request with an organization token. If type is `Time based` an additional configuration is required.
-
-Here you can chose 4 values for orientation: `day`, `week`, `month`, `year`.
-
-- `day` - you can configure interval between days when email will be sent
-- `week` - you can configure interval between weeks adn week day
-- `month` - interval between months and month days or relative to last day of the week or month
-- `year` - interval between years, months and day of these months or relative
-
-`At` is required for all 4 cases, i represents time when email will be sent.
-
-> Email will always have link to edit and unsubscribe from schedule.
+For all four cases, you need to specify the exact time when the email will be sent.
+:::info
+The emial will always include a link to unsubscribe from the schedule. By default it will be a Sumboard link, but you can configure a custom one from [Notification settings](/administration/notifications/)
+:::
 
