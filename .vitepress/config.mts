@@ -64,11 +64,10 @@ const config = defineConfig({
       {
         text: "Customer-facing features",
         items: [
-          { text: "Introduction", link: "/dashboards/" },
-          { text: "Interactivity", link: "*" },
-          { text: "Filtering", link: "*" },
-          { text: "Scheduling", link: "*" },
-          { text: "Exporting", link: "*" },
+          { text: "Introduction", link: "/customer-facing/" },
+          { text: "Compare feature", link: "/customer-facing/compare/" },
+          { text: "Reports", link: "/customer-facing/reports/" },
+          { text: "Scheduling", link: "/customer-facing/schedules/" },
         ],
       },
       {
@@ -136,14 +135,6 @@ const config = defineConfig({
         items: [
           { text: "Terms and conditions", link: "*" },
         ],
-      },
-      {
-        text: "Reports",
-        items: [{ text: "Overview", link: "/reports/" }],
-      },
-      {
-        text: "Schedules",
-        items: [{ text: "Overview", link: "/schedules/" }],
       },
       {
         text: "Settings",
