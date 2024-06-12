@@ -1,17 +1,28 @@
-# Introduction
-Dashboard settings
-Dashboard can configure visual components and localization aspects. Dashboard is a grid of columns and rows, you can specify minCols, in this case the whole screen will contain selected amount of columns. You also can configure maxCols, when a chart will expand more than min, columns will shrink to add require amount od columns, a chart can't expand more than max. It a chart expands more than minRows, row's height will remain constant and an additional one will be pushed down.
+# Workspace settings
+Workspace settings allow you to set up default settings that will apply to your dashboards.
 
-Region formatting
-You can set language and timezone for your dashboard. Default language is en and timezone is +0000. You also can specify different configs of individual column types.
+![Workspace settings](workspace-settings.jpg)
 
-Date
-locale
-timezone
-formats for aggregations
-Number
-digits - comma position and style, number of decimal units
-Currency
-Same as number but can override currency symbol
+Here's what you can control at the dashboard level:
 
-Note that formatting configs can be overwritten by charts, then by token config
+**Organization Name**:
+You can change the name of your organization. This name is not publicly displayed and serve only for identification purposes only.
+
+**Language**:
+Set the default language for your dashboards. This language will be used in shared links or embedded apps by default. You can also override this setting at the individual dashboard level.
+
+**Timezone**:
+Specify the default timezone for your charts. This timezone will be used when displaying timestamp values. Like the language setting, this can also be changed at the dashboard level.
+
+**Date and Time Formats**:
+**Define the default formats for displaying date and time values in your charts. These formats ensure consistency in how date and time information is presented across all charts. You can override these settings at the chart level if needed.
+
+**Other Settings**:
+Set default options for how number and currency data types are displayed in your charts. These settings can be customized at the chart level to meet specific needs.
+
+**Secret Key**:
+Your Sumboard secret key is crucial for embedding your dashboards securely.
+
+:::warning
+Treat your secret key like a password. Anyone who has access to your key will be able to embed your dashboards. Do not share your key on GitHub or any other public platform. For more information on how to protect your key, please refer to the documentation.
+:::

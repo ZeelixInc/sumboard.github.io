@@ -115,12 +115,12 @@ const config = defineConfig({
       {
         text: "Administration",
         items: [
-          { text: "Organization settings", link: "*" },
-          { text: "Users", link: "*" },
-          { text: "Dashboard themes", link: "*" },
-          { text: "Notifications", link: "*" },
-          { text: "Export settings", link: "*" },
-          { text: "User settings", link: "*" },
+          { text: "Workspace settings", link: "/administration/" },
+          { text: "Users", link: "/administration/users/" },
+          { text: "Dashboard themes", link: "/administration/customization/" },
+          { text: "Notifications", link: "/administration/notifications/" },
+          { text: "Export settings", link: "/administration/export/" },
+          { text: "Profile settings", link: "/administration/profile/" },
         ],
       },
       {
