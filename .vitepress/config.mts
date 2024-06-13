@@ -146,5 +146,5 @@ export default withMermaid({
   mermaid: {
     startOnLoad: true,
   },
-  head: [['link', { rel: 'icon', href: 'favicon.ico' }]]
+  head: [['link', { rel: 'icon', href: '/base/favicon.ico' }]]
 });
