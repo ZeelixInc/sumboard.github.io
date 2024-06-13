@@ -1,8 +1,39 @@
-# Charts
+# Introduction
 
-Chart is an individual unit of data representation in a dashboard that performs a query on configured data source. Chart queries can contain variables that will be replaced by passed filters.
+Sumboard charts offer a variety of configuration options to customize the look and behavior of your visualizations.
 
-> Example of sql query
+A chart is an individual unit of data representation within a dashboard that performs a query on a configured data source. These queries can be SQL, No-SQL, or API requests. A dashboard is built from multiple charts and can draw from multiple data sources.
+
+For each chart, you can apply filters through the query editor, tailoring the data displayed to meet specific criteria. All chart configurations are managed from the sidebar config.
+
+![Sidebar config](sidebar-config.jpg)
+
+## Configuring a chart
+1. **Add a chart**: Select the chart type you'd like to use for your visualization.
+2. **Write a query**: Extract data by writing a query.
+3. **Map columns**: In the configuration panel, map the columns in your datasets to the axes of your chart. Sumboard automatically chooses columns based on the chart type you select, but these values can be changed.
+
+## General chart settings
+These settings are available for all chart types:
+
+* Title: Set the title of the chart to give context to your data.
+* Data Source: Select the data source that the chart will visualize.
+* Filters: Apply filters to narrow down the data displayed in the chart.
+
+## Changing a column's data type
+Columns in a chart will render as one of three data types: 
+* string 
+* number
+* datetime. 
+
+These data types impact how the data is rendered in the chart. To ensure your chart renders correctly, you may need to override a column's datatype by selecting the appropriate value from the **Column type** select.
+
+## Adding data labels
+For some charts, you can add a custom label in the **Column title**.
+
+## Examples of queries
+
+**SQL query example**
 
 ```sql
 SELECT
@@ -18,89 +49,16 @@ WHERE
 GROUP BY 1 ORDER BY 1 LIMIT 5000;
 ```
 
-> Example of API query
+**API query example**
 
 ```url
 https://example-api/v1/analytics/{:tokenFilter}/sales?{aggregation:aggregation}&{time_range:time_range}
 ```
+:::info
+Note that you can't set placeholders for filters that doesn't exists in dashboards
+:::
 
-> Example of MongoDb query
-
-```json
-{
-  "collection": "orders",
-  "projection": {
-    "id": 1,
-    "quantity": 1,
-    "product_id": 1,
-    "customer_id": 1,
-    "created_at": 1
-  },
-  "filters": [
-    {
-      "$match": {
-        "$and": [
-          {
-            "created_at": {
-              "$gte": "{{time_range_from}}",
-              "$lte": "{{time_range_to}}"
-            }
-          },
-          { "product_id": "{{productId}}" }
-        ]
-      }
-    },
-    {
-      "$lookup": {
-        "from": "customers",
-        "localField": "customer_id",
-        "foreignField": "id",
-        "as": "customer"
-      }
-    },
-    {
-      "$lookup": {
-        "from": "products",
-        "localField": "product_id",
-        "foreignField": "id",
-        "as": "product"
-      }
-    },
-    {
-      "$unwind": {
-        "path": "$customer"
-      }
-    },
-    {
-      "$unwind": {
-        "path": "$product"
-      }
-    }
-  ],
-  "sort": {
-    "created_at": 1
-  },
-  "extract": {
-    "id": ["id"],
-    "quantity": ["quantity"],
-    "product": ["product", "name"],
-    "customer": ["customer", "name"],
-    "createdAt": ["created_at"]
-  }
-}
-```
-
-Mongo query is an object with following properties:
-
-- `collection` - collection to query
-- `projection` - values to query that will be used in aggregations
-- `filters` - mongodb aggregation documents
-- `sort` - sorting by columns, it can have 0 values
-- `extract` - final fields that will be used in dashboards
-
-> Note that you can't set placeholders for filters that doesn't exists in dashboards
-
-##### API response should have one of the following structure
+**API response should have one of the following structure**
 
 ```json
 [
@@ -113,7 +71,7 @@ Mongo query is an object with following properties:
 ]
 ```
 
-##### or
+**or**
 
 ```json
 {
@@ -131,15 +89,15 @@ Mongo query is an object with following properties:
     }
 }
 ```
+## Chart types
+A chart can be one of the following types:
 
-> Chart can be one of the following types:
-
-- [Bar](/charts/bar/)
-- [Line](/charts/line/)
-- [Pie](/charts/pie/)
-- [Doughnut](/charts/doughnut/)
-- [Text](/charts/text/)
-- [Image](/charts/image/)
-- [Table](/charts/table/)
-- [Transpose Table](/charts/table-transpose/)
-- [Pivot Table](/charts/table-pivot/)
+* [Bar](/charts/bar/)
+* [Line](/charts/line/)
+* [Pie](/charts/pie/)
+* [Doughnut](/charts/doughnut/)
+* [Text](/charts/text/)
+* [Number](/charts/number/)
+* [Table](/charts/table/)
+* [Transpose table](/charts/table-transpose/)
+* [Pivot table](/charts/table-pivot/)
