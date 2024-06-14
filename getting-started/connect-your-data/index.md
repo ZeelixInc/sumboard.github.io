@@ -8,8 +8,8 @@ Start exploring Sumboard immediately with our demo data connection, **[Demo] Sum
 :::
 
 There are several ways to start working with your own data in Sumboard:
-1. Connect your SQL or No-SQL data source (read more [here](/data-sources/)).
-2. Create an API connection and pull data into Sumboard (read more [here](/data-sources/)).
+1. Connect your SQL or No-SQL data source. [See supported data sources here](/data-sources/).
+2. Create an API connection and pull data into Sumboard. [See API reference here](/data-sources/).
 
 :::tip
 You can combine data from multiple data sources in the same dashboard.
