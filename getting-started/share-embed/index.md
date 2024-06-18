@@ -2,7 +2,7 @@
 Sumboard makes it easy to share a dashboard or embed it into existing applications. 
 
 ## Sharing a dashboard
-To share a dashboard via a link, click the Share button and add a share link. Assign a name and configure sharing properties, such as enabling filtering and scheduling. This will generate a public link that you can share with your customers or team members.
+To share a dashboard via a link, click the **Share** button and add a share link. Assign a name and configure sharing properties, such as enabling filtering and scheduling. This will generate a public link that you can share with your customers or team members.
 
 ![sharing via link](share.jpg)
 

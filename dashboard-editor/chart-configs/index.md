@@ -20,7 +20,7 @@ These settings are available for all chart types:
 - **Filters**: Apply filters to narrow down the data displayed in the chart.
 
 ## Change a column's data type
-Columns in a chart will render as one of three data types: `string`, `number`, and `datetime`. These datatypes impact how the data is rendered in the chart. Sometimes, you may need to override a column's datatype to ensure your chart renders correctly. You can do this by selecting the proper value from the `Column type` select.
+Columns in a chart will render as one of three data types: `string`, `number`, and `datetime`. These data types impact how the data is rendered in the chart. Sometimes, you may need to override a column's data type to ensure your chart renders correctly. You can do this by selecting the proper value from the `Column type` select.
 
 ## Adding data labels
 For some charts you can add a custom label in the `Column title`. 

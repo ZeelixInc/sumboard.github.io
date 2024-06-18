@@ -37,5 +37,5 @@ For **MongoDB** you need to specify following options:
 - Database name
 
 :::info
-All credentials are encrypted using industry-standard encryption protocols both in transit and at rest. This means your creadentials are securely stored, preventing unauthorized access.
+All credentials are encrypted using industry-standard encryption protocols both in transit and at rest. This means your credentials are securely stored, preventing unauthorized access.
 :::
