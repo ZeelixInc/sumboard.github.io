@@ -16,6 +16,7 @@ const config = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Go to Sumboard", link: "https://www.sumboard.io/" },
+      { text: "Changelog", link: "/changelog/" },
     ],
 
     sidebar: [
