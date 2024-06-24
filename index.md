@@ -19,7 +19,7 @@ hero:
 
 Sumboard is a low-code tool for embedding interactive analytics into B2B SaaS products. It helps developers and product teams create customizable dashboards, connect multiple data sources, and provide real-time insights to their users.
 
-<iframe width="720" height="405" src="https://www.youtube.com/embed/oskYr81EHwA?si=qdhAj2mC8I3HcXt5" title="Sumboard - embedded analytics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls=0 modestbranding=1></iframe>
+<iframe width="720" height="405" src="https://www.youtube.com/embed/axiOg4k_E4A?si=IB8Ks4HNHMe80rsz" title="Sumboard - embedded analytics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls=0 modestbranding=1></iframe>
 
 ## The fastes way to create Customer-facing analytics
 
