@@ -1,4 +1,4 @@
-**Table Chart**
+# Table chart
 
 ![Table chart](table.jpg)
 

@@ -15,7 +15,9 @@ hero:
       link: /settings/
 ---
 
-# What is Sumboard
+# Sumboard documentation
+
+## What is Sumboard
 
 Sumboard is a low-code tool for embedding interactive analytics into B2B SaaS products. It helps developers and product teams create customizable dashboards, connect multiple data sources, and provide real-time insights to their users.
 
