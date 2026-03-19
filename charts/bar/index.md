@@ -6,7 +6,7 @@ Bar charts are ideal for visually comparing data across different categories. Th
 
 ## Configuration Options
 
-In the configuration sidebar, you can customize the bar chart with the following options: 
+In the configuration sidebar, you can customize the bar chart with the following options:
 
 - **Chart type**: Switch between different chart types to visualize your data. Sumboard will map the columns based on its best guess to build the visualization.
 - **Chart title**: Add or disable the chart title to provide context to your data.
